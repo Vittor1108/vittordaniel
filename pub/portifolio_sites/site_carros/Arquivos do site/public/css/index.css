@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Header */
+
+.top-header{
+    margin-top: 2em;
+    display:flex;
+    justify-content: space-between;
+}
+
+.top-header img{
+    max-width: 10em;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.top-header nav{
+    width: 100%;
+    text-align: right;
+}
+
+.top-header nav ul li{
+    display: inline-block;
+    padding: 2%;
+    font-size: 1.3em;
+    margin-top: .5em;
+    font-style: italic;
+    margin-right: 1%;
+}
+
+.top-header nav ul li:last-child {
+    margin-right: 4%;
+}
+
+.top-header nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.top-header nav ul li a:hover{
+    color: red;
+}
+
+.top-header nav ul li:first-child a{
+    color: red;
+    transition: color .5s;
+}
+
+.top-header nav ul li:first-child a:hover{
+    color: black;
+}
+
+.banner-header{
+    background-image: url(../images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-top: 1.5em;
+}
+
+.icons-banner{
+    margin-top: 3em;
+    display: inline-block;
+    width: 100%;
+}
+
+.icon1{
+    color: white;
+    text-transform: uppercase;
+    background-image: url(../images/box-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    max-width: 19em;
+    margin-top: 4.5em;
+    margin-left: 5%;
+    height:12vh;
+    padding: 5px 1%;
+}
+
+.icon1 p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-left: 5%;
+}
+
+
+.icon2{
+    color: white;
+    text-transform: uppercase;
+    background-image: url(../images/box-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    width: 100%;
+    max-width: 16em;
+    margin-top: 3em;
+    margin-left: 4%;
+    height:8vh;
+    padding: 25px 1%;
+}
+
+.icon2 p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -.8em; 
+    margin-left: 5%;
+}
+
+.icon3{
+    color: white;
+    text-transform: uppercase;
+    background-image: url(../images/box-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    width: 100%;
+    max-width: 15em;
+    margin-top: 3em;
+    margin-left: 3%;
+    height:8vh;
+    padding: 25px 1%;
+}
+
+.icon3 p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -.8em;
+    margin-left: 5%;
+}
+
+.icon4{
+    color: black;
+    text-transform: uppercase;
+    background-image: url(../images/box-white-text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    max-width: 19em;
+    margin-top: 2em;
+    margin-left: 2%;
+    height:8vh;
+
+}
+
+.icon4 p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: .2em;
+}  
+
+
+/* sections */
+
+.veiculos-destaque{
+    margin-top: 5em;
+}
+
+.line-title{
+    display: flex;
+    justify-content:space-around;
+}
+
+.line-left, .line-right{
+    border-bottom: 3px solid black;
+    color:transparent;
+    width: 33%
+}
+
+.title{
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 19em;
+}
+
+.pictures-cars{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    width: 97%;
+    max-width: 79em;
+    margin: 5em auto;
+}
+
+.car1{
+    width:32%;
+    text-align: left;
+}
+
+.car1 img{
+    max-width: 25em;
+    width:100%;
+}
+
+.car1 p{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.car1 span{
+    margin-top: 1em;
+    display:block;
+    color: rgb(173, 173, 173);
+}
+
+input[value="Mais detalhes"]{
+    background-color: #EB2D2D;
+    color: white;
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+    border: none;
+    padding: .9em 2%;
+    width: 70%;
+    max-width:9.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 5px solid #B21E1E;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+input[type="button"]:hover{
+    background-color: red;
+}
+
+
+.servicos-depoimentos{
+   display: flex;
+   margin-bottom: 7em;
+}
+
+.servicos{
+    background-color: #242424;
+    padding: 1em 10%;
+    width: 50%;
+    color: white;
+    font-size: 1.5em;
+}
+
+.servicos h4{
+    margin:2em 0;
+    font-size: 1.2em;
+}
+
+.servicos input[value="Saiba Mais"]{
+    background-color: #EB2D2D;
+    color: white;
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+    border: none;
+    padding: 1em;
+    width: 70%;
+    max-width: 9.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 5px solid #B21E1E;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+.servicos input[value="Saiba Mais"]:hover{
+    background-color: red;
+}
+
+.depoimentos{
+    width:50%;
+    background-color: #EB2D2D;
+    color:white;
+    padding: 1em 10%;
+    font-size: 1.5em;
+}
+
+.depoimentos h4{
+    margin:2em 0;
+    font-size: 1.2em;
+}
+
+.arrows{
+    margin-top:1.5em;
+    text-align:center;
+}
+
+.arrows img{
+    margin-right:10%;
+    cursor: pointer;
+}
+
+.depoimentos > p:nth-of-type(2){
+    color:#252525;
+    font-size:1.5em;
+    text-align: center;
+    margin:2em 0;
+}
+
+.form fieldset{
+    border: none;
+}
+
+form{
+    width:80%;
+    max-width: 37.5em;
+    margin: 5em auto;
+}
+
+form input[type="name"]{
+    padding: 1.2em 2%;
+    width:100%;
+    outline:none;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+}
+
+form input[type="email"]{
+    padding: 1.2em 2%;
+    width: 48%;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+    margin-right: 2%;
+}
+
+form input[type="number"]{
+    padding: 1.2em 2%;
+    width:49.3%;
+    outline: none;
+    border: 1px solid #ccc
+}
+
+
+form input[type="text"]{
+    padding: 3.1em 2%;
+    width:100%;
+    outline:none;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+}
+
+fieldset > input[type="button"]{
+    background-color: #EB2D2D;
+    color: white;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    max-width: 9.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 5px solid #B21E1E;
+    cursor: pointer;
+    transition: background .5s;
+    display: block;
+    margin: 2.5em auto 0 auto;
+}
+
+fieldset > input[type="button"]:hover{
+    background-color: red;
+}
+
+/* footer */
+
+.rodape{
+    display: flex;
+    justify-content:space-around;
+    background-color:#252525;
+    color: white;
+    padding: 2.5em 2%;
+    font-style: italic;
+    font-size:1.2em;
+}
+
+
+.rodape a{
+    color:white;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.rodape a:hover{
+    color: #EB2D2D;
+}
+
+.rodape a:nth-of-type(1){
+    color: #EB2D2D;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.rodape a:nth-of-type(1):hover{
+    color: black;
+}
+
+.rodape span{
+    transition:color .5s;
+}
+
+.rodape span:hover{
+    color: black;
+}
+
+@media screen and (max-width:48em){
+    .top-header nav{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+        float: right;
+        margin-top: -3em;
+        margin-right: 4%;
+        cursor: pointer;
+    }
+
+    .banner-header{
+        background-image: url(../images/bg.jpg);
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin-top: 1.5em;
+    }
+
+    input[value="Mais detalhes"]{
+        padding: .9em 2%;
+    }
+
+    .servicos-depoimentos{
+        display: block;
+    }
+
+    .servicos{
+        width: 100%;
+        text-align: left;
+    }
+
+    .servicos ul{
+        list-style-position:inside;
+    }
+
+   .servicos-article{
+       width: 40%;
+       margin: 0 auto;
+   }
+
+   .depoimentos{
+       width: 100%;
+   }
+
+   .arrows{
+       text-align: left;
+       width: 30%;
+   }
+
+   .arrows img{
+       margin-right: 10%;
+   }
+
+   .depoimentos-article p:nth-of-type(2){
+       display:block;
+       width: 30%;
+       float:right;
+       margin-top: -2em;
+   }
+
+   form input[type="email"]{
+       width: 100%;
+   }
+
+   form input[type="number"]{
+       width: 100%;
+       margin-bottom: 1.2em;
+   }
+
+   .rodape{
+       display: block;
+   }
+
+   .rodape a{
+       display: none;
+   }
+
+   .rodape span{
+       text-align: center;
+       display: block;
+   }
+
+}
+
+@media screen and (max-width:36em){
+    .pictures-cars{
+        display: block;
+    }
+
+    .car1{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+}
